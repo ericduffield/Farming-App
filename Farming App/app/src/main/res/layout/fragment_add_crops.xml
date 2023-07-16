@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_animals_Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor2"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:textAlignment="center"
+    app:layout_anchorGravity="center"
+    tools:context=".AddCropsFragment">
+
+
+    <TextView
+        android:id="@+id/type_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/type"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/type_EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:ems="10"
+        android:hint="@string/enter_type"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/acres_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/acres"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/acres_EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/type_a_number"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/time_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/time"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="34sp" />
+
+<!--    <Button-->
+<!--        android:id="@+id/date_Button"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="4dp"-->
+<!--        android:background="@color/colorAccent"-->
+<!--        android:padding="8dp"-->
+<!--        android:text="@string/choose_a_date"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="@color/textColor" />-->
+
+    <DatePicker
+        android:id="@+id/datePickerCrop"
+        android:layout_width="wrap_content"
+        android:layout_height="184dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner" />
+
+    <LinearLayout
+        android:id="@+id/add_reset_Layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@color/colorAccent"
+            android:text="@string/add"
+            android:textAlignment="center"
+            android:textColor="@color/textColor" />
+
+        <Button
+            android:id="@+id/reset_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@color/colorAccent"
+            android:text="@string/reset"
+            android:textAlignment="center"
+            android:textColor="@color/textColor" />
+    </LinearLayout>
+
+</LinearLayout>
